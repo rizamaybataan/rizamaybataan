@@ -15,6 +15,7 @@ function clickLike2(){
   countLike2.textContent = totalLikes.toString()
 }  
 btnLike2.addEventListener("click",clickLike2)
+
 const btnDisLike1 = document.getElementById("btnDisLike1")
 const countDisLike1 = document.getElementById("countDisLike1")
 
@@ -34,11 +35,15 @@ function clickDisLike2(){
 btnDisLike2.addEventListener("click",clickDisLike2)
 
 const submit = document.getElementById("submit")
+
 const comment = document.getElementById("comment")
+
 const commentbox = document.getElementById("commentbox")
+
 function submitComment(){
-  
+
 commentbox.textContent += comment.value.toString() + "\n"
-  comment.value=""
+comment.value=""
 }
+
 submit.addEventListener("click", submitComment)
